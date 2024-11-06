@@ -9,25 +9,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./fontawesome/css/fontawesome.min.css">
     <title>Document</title>
 </head>
 <style>
-    p {
-        text-align: right;
-        margin-top: 180px;
-        margin-right: 2cm;
+     body {
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+    }
+    .navbar {
+        border-radius: 10px;
+        justify-content: center;
+    }
+     .carousel-inner {
+        border-radius: 10px;
+        margin-top: 30px;
     }
 
-    p1 {
-        margin-left: 2cm;
+    .carousel-item img {
+        width: 100%;
+        height: 500px;
+        /* Sesuaikan dengan tinggi yang diinginkan */
+        object-fit: cover;
+        /* Ini akan menjaga aspek rasio gambar */
     }
-
-    p2 {
-        align-items: right;
-        margin-left: 25cm;
-
+    .container{
+        margin-left: 50px;
     }
-
     .footer {
         margin-top: 200px;
     }
@@ -39,7 +48,7 @@
             <div class="text-center">
                 <img src="nubas.jpg.png" class="rounded" width="35%" margin-left="3cm">
             </div>
-            <a class=" fs-4 navbar-brand  text-white" href="menu.php">Beranda</a>
+            <a class=" fs-4 navbar-brand  text-white" href="menu.php"><i class="fa-solid fa-house"></i> Beranda</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -47,15 +56,55 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="fs-4 nav-link active  text-white" aria-current="page" href="input.php">Input Tugas</a>
+                        <a class="fs-4 nav-link active  text-white" aria-current="page" href="input.php"><i class="fa-solid fa-pen-to-square"></i> Input Tugas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="fs-4 nav-link  text-white" href="daftartugas.php">Daftar Tugas</a>
+                        <a class="fs-4 nav-link  text-white" href="daftartugas.php"><i class="fa-solid fa-list"></i> Daftar Tugas</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- indicator start -->
+    <div class="container-fluid">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active object-fit-cover" data-bs-interval="1000">
+                    <img src="./img/BG_BeachFestival_Night.jpg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item object-fit-cover" data-bs-interval="2000">
+                    <img src="./img/BG_BigPlaza_Night.jpg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item object-fit-cover" data-bs-interval="3000">
+                    <img src="./img/BG_CS_PV4_5_40.jpg" class="d-block" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- indicator end -->
+     <div class="container">
+    <h1 class="mt-5 text-white">MY <span class="badge text-bg-dark">HOMEWORK</span></h1>
+    <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, exercitationem ratione maiores sunt nostrum recusandae, reiciendis assumenda similique eaque modi quidem! Alias ut esse eveniet placeat distinctio in omnis a?</p>
+    </div>
+    <!-- footer -->
+    <div class="text-center">
+  <div class="footer">
+  <p class="text-white">Nusabangsa@gmail.com</p>
+  <p class="text-white">000-111-222</p>
+  </div>
+</div>
+<script src="./fontawesome/js/all.min.js"></script>
+</body>
+
+</html>
     <p class="fs-1 fw-bolder text-white"> MY <br>HOMEWORK </p>
     <footer class="footer">
         <p1 class="text-white">Nusabangsa@gmail.com</p1>
